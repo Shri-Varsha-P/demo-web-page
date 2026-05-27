@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+    color:white;
+
+    /* BACKGROUND IMAGE */
+    background-image: url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* DARK OVERLAY */
+
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.65);
+
+    z-index:-1;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 80px;
+}
+
+.logo{
+    font-size:32px;
+    color:#dcdcff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#7aa2ff;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:85vh;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:100px;
+}
+
+.content{
+    max-width:600px;
+}
+
+/* SMALL TOP TEXT */
+
+.small-text{
+    letter-spacing:4px;
+    color:#b7bfdc;
+
+    margin-bottom:20px;
+}
+
+/* MAIN HEADING */
+
+.hero h2{
+    font-size:72px;
+    line-height:1.2;
+
+    margin-bottom:25px;
+}
+
+.hero h2 span{
+    color:#7aa2ff;
+    font-style:italic;
+}
+
+/* DESCRIPTION */
+
+.description{
+    font-size:22px;
+    line-height:1.7;
+
+    color:#d7d7e5;
+
+    margin-bottom:35px;
+}
+
+/* BUTTON */
+
+button{
+    padding:15px 35px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#7aa2ff;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#5c84e8;
+
+    transform:scale(1.05);
+}
+
+/* QUOTE SECTION */
+
+.quote-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:100px 20px;
+}
+
+/* GLASS EFFECT BOX */
+
+.quote-box{
+    width:70%;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    text-align:center;
+}
+
+.quote{
+    font-size:32px;
+    line-height:1.8;
+
+    color:#e4e4ff;
+
+    margin-bottom:20px;
+}
+
+.quote-box h3{
+    color:#7aa2ff;
+    font-weight:normal;
+}
